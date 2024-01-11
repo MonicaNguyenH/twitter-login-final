@@ -1,0 +1,125 @@
+.main {
+  min-height: 20vh;
+  min-width: 20vh;
+  font-family: Helvetica;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 35%;
+  padding: 8%;
+}
+
+.boxContent{
+  flex: 1;
+  max-height: 650px;
+  max-width: 560px;
+}
+
+.boxLogo {
+  max-height: 650px;
+  max-width: 560px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  width: 180%;
+  height: 180%;
+}
+
+.h1, .h2, .h3 {
+  padding-left: 10px;
+}
+
+.h1 {
+  font-size: 450%;
+}
+
+.h2 {
+  font-size: 200%;
+}
+
+.h3 {
+  font-size: 120%;
+}
+
+.lineOr {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  color: var(--dark-grey);
+}
+
+.line {
+  margin-top: -10px;
+  margin: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+/*Tablet and Ipad Air*/
+@media (min-width: 580px) and (max-width: 1000px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    margin: 10px 110px 20px;
+    padding: 16px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+
+}
+
+/*Iphone XR and Smart Phones*/
+@media (max-width: 579px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start; 
+    margin: 10px 0 20px;
+    padding: 16px;
+  }
+
+  .boxContent, .boxLogo {
+    max-width: 414px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    height: 25%;
+  }
+
+  .h1 {
+    font-size: 300%;
+  }
+
+  .h2 {
+    font-size: 150%;
+  }
+}

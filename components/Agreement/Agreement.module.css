@@ -1,0 +1,14 @@
+.hyperlink {
+    color: var(--twitter-blue);
+}
+
+.hyperlink:hover {
+    color: var(--grey);
+}
+
+.p {
+    width: auto;
+    margin: 10px;
+    max-width: 300px;
+    font-size: var(--body-text);
+}
